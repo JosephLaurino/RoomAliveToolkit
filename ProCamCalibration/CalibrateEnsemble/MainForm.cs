@@ -51,7 +51,7 @@ namespace RoomAliveToolkit
                 SampleDescription = new SampleDescription(1, 0),
             };
 
-            SharpDX.Direct3D11.Device.CreateWithSwapChain(SharpDX.Direct3D.DriverType.Hardware, DeviceCreationFlags.Debug, swapChainDesc, out device, out swapChain);
+            SharpDX.Direct3D11.Device.CreateWithSwapChain(SharpDX.Direct3D.DriverType.Hardware, DeviceCreationFlags.None, swapChainDesc, out device, out swapChain);
 
             // render target
             renderTarget = Texture2D.FromSwapChain<Texture2D>(swapChain, 0);
